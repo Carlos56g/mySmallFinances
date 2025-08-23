@@ -1,0 +1,72 @@
+section {
+    margin: 0.2rem;
+}
+
+main {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+
+.navegationBar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navegationBar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navegationBar a:hover {
+    background-color: #575757;
+
+}
+
+.summary {
+    width: 50%;
+    border: 2px solid black;
+}
+
+.summary div {
+    width: 100%;
+}
+
+.graphSummary {
+    width: 100%;
+}
+
+.graphSummary img {
+    width: 95%;
+}
+
+.paymentInfo {
+    border: 2px solid black;
+    margin: 0.5rem;
+    height: 100%;
+}
+
+.loansDebts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border: 2px solid black;
+}
