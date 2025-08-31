@@ -1,5 +1,21 @@
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+a {
+    font-size: 25px;
+}
+
 section {
-    margin: 0.2rem;
+    margin: 0.2vw;
 }
 
 main {
@@ -10,34 +26,24 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 1vw 2vw;
 }
-
-h1{
-    font-size: 2rem;
-}
-
-h2{
-    font-size: 1.5rem;
-}
-
 
 .navegationBar {
     background-color: #333;
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 1vw;
 }
 
 .navegationBar a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 0.5vw 1vw;
 }
 
 .navegationBar a:hover {
     background-color: #575757;
-
 }
 
 .summary {
@@ -47,6 +53,8 @@ h2{
 
 .summary div {
     width: 100%;
+    justify-content: center;
+    justify-items: center;
 }
 
 .graphSummary {
@@ -59,8 +67,10 @@ h2{
 
 .paymentInfo {
     border: 2px solid black;
-    margin: 0.5rem;
+    margin: 0.5vw;
     height: 100%;
+    justify-content: center;
+    justify-items: center;
 }
 
 .loansDebts {
@@ -69,4 +79,120 @@ h2{
     justify-content: space-around;
     width: 50%;
     border: 2px solid black;
+}
+
+/* Movil */
+@media (max-width: 760px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    body{
+        padding-bottom: 10vh;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .navegationBar{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 3vh 0;
+    }
+    main{
+        display: block;
+    }
+
+    .summary {
+        width: 100%;
+        border: 2px solid black;
+    }
+
+    .loansDebts {
+        width: 100%;
+        border: 2px solid black;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 761px) and (max-width: 1200px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+    
+    body{
+        padding-bottom: 10vh;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .navegationBar{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 3vh 0;
+    }
+
+    main{
+        display: block;
+    }
+
+    .summary {
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+    }
+
+    .summary div{
+        width: 50%;
+    }
+
+    .loansDebts {
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .paymentInfo{
+        width: 45%;
+        border: 2px solid black;
+
+    }
+}
+
+/* Desktop */
+@media (min-width: 1201px) {
+
 }
